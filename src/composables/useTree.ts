@@ -1,5 +1,5 @@
 import TreeStore from '@/utils/TreeStore';
-import { computed, ref } from 'vue';
+import { ref } from 'vue';
 
 export default function useTree () {
   const treeStore = new TreeStore([])
