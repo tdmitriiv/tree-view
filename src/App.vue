@@ -1,11 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import useItemService from '@/composables/useItemService'
+
+const { fetchItems, loading, tree } = useItemService()
+</script>
 
 <template>
   <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  isFetching {{ loading }}
+  <pre>{{ tree }}</pre>
+  <button @click="fetchItems">load</button>
 </template>
 
 <style scoped></style>
