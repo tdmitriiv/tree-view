@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { TreeNode } from '@/types/TreeStore'
 import { markRaw } from 'vue'
 import { AgGridVue } from 'ag-grid-vue3'
 import { ModuleRegistry, AllCommunityModule, type ColDef, type AutoGroupColumnDef } from 'ag-grid-community'

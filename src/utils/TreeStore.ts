@@ -1,3 +1,5 @@
+import type { TreeNode, TreeNodeDTO } from '@/types/TreeStore'
+
 export default class TreeStore {
   treeNodeMap: Map<TreeNodeDTO['id'], TreeNode>
   treeNodeChildrenMap: Map<TreeNodeDTO['parent'], TreeNodeDTO['id'][]> = new Map()

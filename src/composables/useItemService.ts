@@ -1,3 +1,4 @@
+import type { TreeNodeDTO } from '@/types/TreeStore'
 import { shallowRef } from 'vue'
 import { useFetch } from '@vueuse/core'
 import useTree from './useTree'

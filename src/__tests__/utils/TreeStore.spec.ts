@@ -1,3 +1,4 @@
+import type { TreeNodeDTO } from '@@/src/types/TreeStore'
 import { describe, it, expect, vi } from 'vitest'
 
 import TreeStore from '@@/src/utils/TreeStore.ts'

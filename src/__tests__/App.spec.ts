@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 
 import { mount } from '@vue/test-utils'
 import App from '@@/src/App.vue'
+import type { TreeNode } from '@@/src/types/TreeStore'
 
 const loadingRef = { value: false }
 const treeRef = { value: [] as TreeNode[] }

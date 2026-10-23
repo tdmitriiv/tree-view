@@ -1,9 +1,9 @@
-type TreeNodeDTO = {
+export type TreeNodeDTO = {
   id: number | string,
   parent: TreeNodeDTO['id'] | null,
   label: string
 }
 
-type TreeNode = TreeNodeDTO & {
+export type TreeNode = TreeNodeDTO & {
   children: TreeNode[]
 }

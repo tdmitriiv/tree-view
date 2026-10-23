@@ -1,3 +1,4 @@
+import type { TreeNode } from '@@/src/types/TreeStore'
 import { describe, it, expect, vi } from 'vitest'
 
 import { mount } from '@vue/test-utils'
