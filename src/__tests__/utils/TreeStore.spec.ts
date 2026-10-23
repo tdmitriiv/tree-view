@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from 'vitest'
 
-import TreeStore from '@/src/utils/TreeStore.ts'
-import data from '@/public/data.json'
+import TreeStore from '@@/src/utils/TreeStore.ts'
+import data from '@@/public/data.json'
 
 function itemChildrenIds (store: TreeStore, item: TreeNodeDTO['parent']) {
   return store.treeNodeChildrenMap.get(item) || []
